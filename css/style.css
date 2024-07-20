@@ -1,0 +1,73 @@
+body{
+    background-color: #3b4848;
+}
+.item{
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+.item-caption{
+    background-color: #a69779ed;
+    border-radius: 10px;
+    position: absolute;
+    width: 90%;
+    bottom: 20px;
+    left: 5%;
+    text-align: center;
+}
+.item-caption p{
+    font:  900 1.2rem sans-serif;
+    line-height: normal;
+}
+
+#lighteBox{
+    background-color: rgba(0, 0, 0, 0.717);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+#lighteBox-img{
+    position: relative; 
+    background-image: url(../imgs/01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;  
+    height: 600px; 
+    /* width: 50%; */
+    /* height: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+#lighteBox-img i{
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    display: inline !important;
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (min-width : 0px ) and (max-width : 750px) {
+    
+    #lighteBox-img{
+        /* background-color: aqua; */
+        /* width: 400px; */
+        /* height: 300px; */
+        width: 50%;
+        height: 300px;
+        justify-content: space-between;
+    }
+    
+}
